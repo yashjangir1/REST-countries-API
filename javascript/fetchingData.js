@@ -6,12 +6,6 @@ let spinnerEl = document.getElementById("spinner")
 let homePageDarkModeButtonEl = document.getElementById("homePageDarkModeButton")
 
 
-let darkMode = localStorage.getItem("darkMode")
-if(darkMode === undefined){
-    console.log("h")
-    localStorage.setItem("darkMode", "true")
-}
-
 export function creatingCountryBox(flag, countryName, population, region, capital, gmaps){
    
     // ######### country card-box ##############3
@@ -166,6 +160,13 @@ function runningFetch(){
        //spinner removed
        spinnerEl.classList.add("d-none")
    })
+}
+
+let darkMode = localStorage.getItem("darkMode")
+console.log(darkMode)
+if(darkMode === undefined){
+    console.log("h")
+    localStorage.setItem("darkMode", "true")
 }
 
 runningFetch()
