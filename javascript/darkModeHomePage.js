@@ -12,8 +12,10 @@ let regionMenuEl = document.getElementById("regionMenu")
 
 let countriesContainerEl = document.getElementById("countriesContainer")
 
+let homePageEl = document.getElementById("homePage")
+
 function themeSetting(){
-    if(localStorage.getItem("darkMode") === "true"){
+    if(localStorage.getItem("darkMode") === "false"){
         // ###### for Navbar
 
         homePageNavbarEl.classList.remove("dark-mode-navbar")
@@ -48,6 +50,11 @@ function themeSetting(){
 
         countriesContainerEl.classList.remove("dark-mode-text")
         countriesContainerEl.classList.add("light-mode-text")
+
+        // home page
+
+        homePageEl.classList.add("light-background")
+        homePageEl.classList.remove("dark-mode-background")
 
     }
     else{
@@ -86,6 +93,12 @@ function themeSetting(){
 
         countriesContainerEl.classList.add("dark-mode-text")
         countriesContainerEl.classList.remove("light-mode-text")
+
+
+         // home page
+
+         homePageEl.classList.remove("light-background")
+         homePageEl.classList.add("dark-mode-background")
     }
 }
 

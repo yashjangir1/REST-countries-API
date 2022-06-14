@@ -43,7 +43,7 @@ export function creatingCountryBox(flag, countryName, population, region, capita
 
     let countriesDetailContainerEl = document.createElement("div")
     countriesDetailContainerEl.classList.add("country-details-box")
-    if(localStorage.getItem("darkMode") === "false"){
+    if(localStorage.getItem("darkMode") === "true"){
         console.log("1")
         countryBoxEl.classList.add("light-dark-mode-background", "dark-mode-text")
     }
@@ -172,7 +172,7 @@ runningFetch()
 
 let buttonTextEl = document.getElementById("buttonText")
 
-if(localStorage.getItem("darkMode") === "true"){
+if(localStorage.getItem("darkMode") === "false"){
     buttonTextEl.textContent = "Dark Mode"
     spinnerEl.classList.add("light-mode-text")
     spinnerEl.classList.remove("dark-mode-text")

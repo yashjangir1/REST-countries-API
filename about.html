@@ -13,26 +13,28 @@
 
     <!-- #################### NAVBAR ################# -->
 
-    <div class="main-container">
-        <div class="navbar dark-mode-navbar">
-            <h1 class="navbar-title dark-mode-text">Where in the world?</h1>
-            <button class = "btn dark-mode-button dark-mode-text">
+    <div class="main-container navbar-about-page">
+        <div class="navbar" id = "aboutPageNavbar">
+            <h1 class="navbar-title" id = "aPnavbarHeading"><a href = "./index.html"><i class="fa-solid fa-earth-oceania"></i></a></h1>
+            <button class = "btn dark-mode-button" id = "aboutPageDarkModeButton">
                 <i class="fa-solid fa-moon moon-icon"></i>
-                <span class="button-name">Dark Mode</span>
+                <span id = "aboutPageDarkModeButtonText" class="button-name"></span>
             </button>
         </div>
     </div>
 
-    <button class="back-button light-dark-mode-background dark-mode-text" onclick = "history.back()"><i class="fa-solid fa-arrow-left-long arrow-icon"></i>Back</button>
+    <button id = "backButton" class="back-button light-dark-mode-background dark-mode-text" onclick = "history.back()"><i class="fa-solid fa-arrow-left-long arrow-icon"></i>Back</button>
 
-    <!-- ################# MAP ###################### -->
+    <!-- ################# MAP AND DETAILS ###################### -->
+    
+    <div id = "mapAndDetailsContainer" class="map-and-details-container">
+        <div id="map" class = "map-container"></div>
 
-    <div id="map" class = "map-container"></div>
-
-    <!-- ###################### MAIN CONTENT #################### -->
-
-    <div class="details-container" id = "detailsContainer">
-         
+        <!-- ###################### COUNTRY DETAILS #################### -->
+    
+        <div class="details-container" id = "detailsContainer">
+             
+        </div>
     </div>
 
     
@@ -43,5 +45,6 @@
     <script type = "module" src = "./javascript/fetchingDataInAboutPage.js"></script>
     <script type = "module" src = "./javascript/click.js"></script>
     <script type = "module" src = "./javascript/borderButtonFunctioning.js"></script>
+    <script type = "module" src = "./javascript/darkModeButtonAboutPage.js"></script>
 </body>
 </html>

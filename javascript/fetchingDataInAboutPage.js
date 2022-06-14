@@ -14,7 +14,7 @@ export function creatingAboutPage(countryName, nativeName, population, region, s
 
     let countryNameAEl = document.createElement("h1")
     countryNameAEl.textContent = countryName
-    countryNameAEl.classList.add("country-name", "country-name-A", "dark-mode-text")
+    countryNameAEl.classList.add("country-name", "country-name-A")
     countryNameAEl.style.backgroundImage = `url(${flag})`
     detailsContainerEl.appendChild(countryNameAEl)
 
@@ -23,7 +23,7 @@ export function creatingAboutPage(countryName, nativeName, population, region, s
 
     let nativeNameEl = document.createElement("h1")
     nativeNameEl.textContent = "Native Name: "
-    nativeNameEl.classList.add("key", "dark-mode-text")
+    nativeNameEl.classList.add("key")
     detailsContainerEl.appendChild(nativeNameEl)
 
     for(let name of nativeName){
@@ -37,7 +37,7 @@ export function creatingAboutPage(countryName, nativeName, population, region, s
 
     let populationAEl = document.createElement("h1")
     populationAEl.textContent = "Population: "
-    populationAEl.classList.add("key", "dark-mode-text")
+    populationAEl.classList.add("key")
     detailsContainerEl.appendChild(populationAEl)
 
     let populationASpan = document.createElement("span")
@@ -51,7 +51,7 @@ export function creatingAboutPage(countryName, nativeName, population, region, s
 
     let regionAEl = document.createElement("h1")
     regionAEl.textContent = "Region: "
-    regionAEl.classList.add("key", "dark-mode-text")
+    regionAEl.classList.add("key")
     detailsContainerEl.appendChild(regionAEl)
 
     let regionASpan = document.createElement("span")
@@ -63,7 +63,7 @@ export function creatingAboutPage(countryName, nativeName, population, region, s
 
     let subRegionAEl = document.createElement("h1")
     subRegionAEl.textContent = "Sub Region: "
-    subRegionAEl.classList.add("key", "dark-mode-text")
+    subRegionAEl.classList.add("key")
     detailsContainerEl.appendChild(subRegionAEl)
 
     let subRegionASpan = document.createElement("span")
@@ -77,7 +77,7 @@ export function creatingAboutPage(countryName, nativeName, population, region, s
 
     let capitalAEl = document.createElement("h1")
     capitalAEl.textContent = "Sub Region: "
-    capitalAEl.classList.add("key", "dark-mode-text")
+    capitalAEl.classList.add("key")
     detailsContainerEl.appendChild(capitalAEl)
 
     let capitalASpan = document.createElement("span")
@@ -95,7 +95,7 @@ export function creatingAboutPage(countryName, nativeName, population, region, s
 
     let domainEl = document.createElement("h1")
     domainEl.textContent = "Top Level Domain: "
-    domainEl.classList.add("key", "dark-mode-text")
+    domainEl.classList.add("key")
     detailsContainerEl.appendChild(domainEl)
 
     let domainSpan = document.createElement("span")
@@ -109,7 +109,7 @@ export function creatingAboutPage(countryName, nativeName, population, region, s
 
     let currencyEl = document.createElement("h1")
     currencyEl.textContent = "Currencies: "
-    currencyEl.classList.add("key", "dark-mode-text")
+    currencyEl.classList.add("key")
     detailsContainerEl.appendChild(currencyEl)
 
     for(let currency of currencies){
@@ -125,7 +125,7 @@ export function creatingAboutPage(countryName, nativeName, population, region, s
 
     let LanguageEl = document.createElement("h1")
     LanguageEl.textContent = "Languages: "
-    LanguageEl.classList.add("key", "dark-mode-text")
+    LanguageEl.classList.add("key")
     detailsContainerEl.appendChild(LanguageEl)
 
     for(let language of languages){
@@ -147,7 +147,7 @@ export function creatingBorderCountriesButton(borderCountries){
     
     let borderEl = document.createElement("h1")
     borderEl.textContent = "Border Countries: "
-    borderEl.classList.add("border-countries", "dark-mode-text")
+    borderEl.classList.add("border-countries")
     detailsContainerEl.appendChild(borderEl)
 
     let borderCountryButtonConEl = document.createElement("div")
@@ -165,7 +165,7 @@ export function creatingBorderCountriesButton(borderCountries){
             let borderCButton = document.createElement('button')
             borderCButton.textContent = data[0].name.common
             borderCButton.id = data[0].name.common + "borderButton"
-            borderCButton.classList.add("country-button", "dark-mode-text")
+            borderCButton.classList.add("country-button")
             borderCButton.style.backgroundImage = `linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)),url(${data[0].flags.png})`
             borderCountryButtonConEl.appendChild(borderCButton)
         })

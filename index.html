@@ -17,7 +17,7 @@
 
     <div class="main-container navbar-about-page">
         <div class="navbar dark-mode-navbar" id = "homePageNavbar">
-            <h1 class="navbar-title" id = "hPnavbarHeading">Where in the world?</h1>
+            <h1 class="navbar-title" id = "hPnavbarHeading"><a href = "./index.html"><i class="fa-solid fa-earth-oceania"></i></a></h1>
             <button class = "btn dark-mode-button" id = "homePageDarkModeButton">
                 <i class="fa-solid fa-moon moon-icon" id = "moonIcon"></i>
                 <span class="button-name" id = "buttonText"></span>
@@ -29,24 +29,25 @@
 
     <div id = "homePageContainer" class="home-page">
 
+        <div class = "search-and-dropdown-container">
+             <!-- ##### search bar ##### -->
+            <div class="search-bar-and-logo d-flex flex-row" id = "searchBarContainer">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input id = "searchBar" placeholder="Search for a country.." type="text" class="search-bar light-dark-mode-background">
+            </div>
 
-        <!-- ##### search bar ##### -->
-        <div class="search-bar-and-logo d-flex flex-row" id = "searchBarContainer">
-            <i class="fa-solid fa-magnifying-glass search-icon"></i>
-            <input id = "searchBar" placeholder="Search for a country.." type="text" class="search-bar light-dark-mode-background">
-        </div>
-
-         <!-- ###### drop down menu ##### -->
-        <div class="dropdown-menu-container">
-            <select id = "regionMenu" class="form-select form-select-sm region-select">
-                <option selected disabled hidden>Filter by region</option>
-                <option value="Asia">Asia</option>
-                <option value="Africa">Africa</option>
-                <option value="Europe">Europe</option>
-                <option value="America">America</option>
-                <option value="Oceania">Oceania</option>
-            </select>
-        </div>
+            <!-- ###### drop down menu ##### -->
+            <div class="dropdown-menu-container">
+                <select id = "regionMenu" class="form-select form-select-sm region-select">
+                    <option selected disabled hidden>Filter by region</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Europe">Europe</option>
+                    <option value="America">America</option>
+                    <option value="Oceania">Oceania</option>
+                </select>
+            </div>
+        </div> 
 
 
          <!-- ######### div for appending countries ########### -->

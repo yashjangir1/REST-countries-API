@@ -6,7 +6,6 @@
 
 body{
     margin: 0px;
-    background-color: hsl(207, 26%, 17%);
 }
 
 .dark-mode-background{
@@ -47,7 +46,7 @@ body{
     font-weight: 700;
     margin-top: auto;
     margin-bottom: auto;
-    font-size: 16px;
+    font-size: 40px;
 }
 
 .dark-mode-button{
@@ -230,32 +229,32 @@ body{
     flex-direction: column;
 }
 
-.navbar-about-page{
-    order: 0;
+
+
+
+
+
+
+
+
+
+
+
+.map-and-details-container{
+    display: flex;
+    flex-direction: column;
 }
 
-
-
-
 .map-container{
-    order: 1;
+    order: -1;
     margin-top: 30px;
     height: 200px;
     width: 100%;
 }
 
 
-
-
-
-
-
-
-
-
-
 .details-container{
-    order: 2;
+    order: 1;
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 20px;
@@ -299,4 +298,92 @@ body{
     min-width: 70px;
     height: 30px;
     box-shadow: 0px 0px 5px 0px black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width : 769px){
+      
+    .navbar{
+    padding-left: 50px;
+    padding-right: 50px;
+    }
+
+    .search-and-dropdown-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .search-bar-and-logo{
+    margin: 0px;
+    min-width: 400px;
+    }
+
+    .region-select{
+    margin-top: 0px;
+    min-width: 200px;
+    }
+
+    .dropdown-menu-container{
+    margin: 0px;
+    }
+
+    .countries-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    }
+
+    .country-box{
+    max-width: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+    }
+
+
+    
+
+
+
+    .back-button{
+        margin-left: 50px;
+    }
+
+
+
+
+    .map-and-details-container{
+        flex-direction: row;
+    }
+
+    .map-container{
+        height: 70vh;
+        align-self: center;
+    }
+
+    .details-container{
+        min-width: 30vw;
+        margin-left: 20px;
+    }
+
+    .country-name-A{
+        font-size: 45px;
+    }
+
 }

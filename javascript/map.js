@@ -1,3 +1,5 @@
+let mapAndDetailsContainerEl = document.getElementById("mapAndDetailsContainer")
+
 export function countryOnMap(latlng, name){
 	let mapEl = document.getElementById("map")
 	if(mapEl === null){
@@ -22,7 +24,7 @@ export function countryOnMap(latlng, name){
 		let mapELL = document.createElement("div")
 		mapELL.id = "map"
 		mapELL.classList.add("map-container")
-		document.querySelector("body").appendChild(mapELL)
+		mapAndDetailsContainerEl.appendChild(mapELL)
 
 		var map = L.map('map').setView(latlng, 3);
 

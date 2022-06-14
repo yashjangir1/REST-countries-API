@@ -33,7 +33,7 @@ export function appendingData(countryName){
                 
                 let borderEl = document.createElement("h1")
                 borderEl.textContent = "It is an Island"
-                borderEl.classList.add("border-countries", "dark-mode-text")
+                borderEl.classList.add("border-countries")
                 detailsContainerEl.appendChild(borderEl)
             }
             countryOnMap(data.latlng, countryName)
