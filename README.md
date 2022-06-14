@@ -14,3 +14,6 @@ Screenshots of site:
 
 
 Link to the live site:  https://dreamy-parfait-c14c90.netlify.app/
+
+
+Dark Mode or Light Mode button helps to switch the theme of the page and stores it in localStorage so while reloading ot retains it state.
