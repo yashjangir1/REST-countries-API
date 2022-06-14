@@ -38,11 +38,9 @@ export function creatingCountryBox(flag, countryName, population, region, capita
     let countriesDetailContainerEl = document.createElement("div")
     countriesDetailContainerEl.classList.add("country-details-box")
     if(localStorage.getItem("darkMode") === "true"){
-        console.log("1")
         countryBoxEl.classList.add("light-dark-mode-background", "dark-mode-text")
     }
     else{
-        console.log("@")
         countryBoxEl.classList.add("light-background", "light-mode-text")
     }
     countriesDetailContainerEl.id = countryName + "DetailBox"
@@ -164,7 +162,7 @@ function runningFetch(){
 
 let darkMode = localStorage.getItem("darkMode")
 console.log(darkMode)
-if(darkMode === undefined){
+if(darkMode === null){
     console.log("h")
     localStorage.setItem("darkMode", "true")
 }
