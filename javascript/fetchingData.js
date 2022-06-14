@@ -161,7 +161,6 @@ function runningFetch(){
 }
 
 let darkMode = localStorage.getItem("darkMode")
-console.log(darkMode)
 if(darkMode === null){
     console.log("h")
     localStorage.setItem("darkMode", "true")

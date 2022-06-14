@@ -5,7 +5,7 @@ let aboutPageEl = document.getElementById("aboutPage")
 
 let country = localStorage.getItem("country")
 
-if(country === undefined){
+if(country === null){
     localStorage.setItem("country", "Germany")
 }
 // ############### function appends data to about page ################
