@@ -17,10 +17,17 @@ export function appendingData(countryName){
         .then(response => response.json())
         .then(dataArray => {
             let data = dataArray[0]
-
-            let nativeNameValues = Object.values(data.name.nativeName)
+            
+            let nativeNameValues
+            if(data.name.nativeName === undefined){
+                nativeNameValues = data.name.common
+            }
+            else{
+                nativeNameValues = Object.values(data.name.nativeName)
+            }
             
             let currencyArr
+            console.log(data.currencies)
             if(data.currencies === undefined){
                 currencyArr = ["-"]
             }
@@ -28,7 +35,13 @@ export function appendingData(countryName){
                 currencyArr = Object.values(data.currencies)
             }
 
-            let languagesArr = Object.values(data.languages)
+            let languagesArr
+            if(data.languages === undefined){
+                languagesArr = ["Unknown"]
+            }
+            else{
+                languagesArr = Object.values(data.languages)
+            }
 
             let capitalArr
 
