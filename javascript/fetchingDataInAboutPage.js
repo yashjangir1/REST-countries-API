@@ -3,7 +3,6 @@
 
 
 //This files creates the about page
-
 export function creatingAboutPage(countryName, nativeName, population, region, subRegion, capitals, domain, currencies, languages, flag){
     
     // getting detailsContainer from about page
@@ -15,7 +14,6 @@ export function creatingAboutPage(countryName, nativeName, population, region, s
     let countryNameAEl = document.createElement("h1")
     countryNameAEl.textContent = countryName
     countryNameAEl.classList.add("country-name", "country-name-A")
-    countryNameAEl.style.backgroundImage = `url(${flag})`
     detailsContainerEl.appendChild(countryNameAEl)
 
 
