@@ -11,7 +11,6 @@ let detailsContainerEl = document.getElementById("detailsContainer")
 let aboutPageDarkModeButtonTextEl = document.getElementById("aboutPageDarkModeButtonText")
 
 function aboutPageThemeSetting(){
-    console.log(localStorage.getItem("darkMode"))
     if(localStorage.getItem("darkMode") === "false"){
         // ###### for Navbar
 

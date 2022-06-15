@@ -4,7 +4,7 @@
 
 //This files creates the about page
 
-export function creatingAboutPage(countryName, nativeName, population, region, subRegion, capital, domain, currencies, languages, flag){
+export function creatingAboutPage(countryName, nativeName, population, region, subRegion, capitals, domain, currencies, languages, flag){
     
     // getting detailsContainer from about page
     
@@ -76,14 +76,16 @@ export function creatingAboutPage(countryName, nativeName, population, region, s
     //capital
 
     let capitalAEl = document.createElement("h1")
-    capitalAEl.textContent = "Sub Region: "
+    capitalAEl.textContent = "Capital: "
     capitalAEl.classList.add("key")
     detailsContainerEl.appendChild(capitalAEl)
 
-    let capitalASpan = document.createElement("span")
-    capitalASpan.textContent = capital
-    capitalASpan.classList.add("detail")
-    capitalAEl.appendChild(capitalASpan)
+    for(let capital of capitals){
+        let capitalASpan = document.createElement("span")
+        capitalASpan.textContent = capital
+        capitalASpan.classList.add("detail")
+        capitalAEl.appendChild(capitalASpan)
+    }
 
 
     //break element

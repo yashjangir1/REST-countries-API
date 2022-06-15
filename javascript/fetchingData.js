@@ -20,15 +20,12 @@ export function creatingCountryBox(flag, countryName, population, region, capita
 
     // Flag 
 
-    let anchorEL = document.createElement("a")
-    anchorEL.href = "#"
-    countryBoxEl.appendChild(anchorEL)
-
     let flagEl = document.createElement("img")
     flagEl.classList.add("flag")
+    flagEl.alt = countryName + "flag image"
     flagEl.src = flag
     flagEl.id = countryName + "Flag"
-    anchorEL.appendChild(flagEl)
+    countryBoxEl.appendChild(flagEl)
     
 
 
@@ -43,7 +40,6 @@ export function creatingCountryBox(flag, countryName, population, region, capita
     else{
         countryBoxEl.classList.add("light-background", "light-mode-text")
     }
-    countriesDetailContainerEl.id = countryName + "DetailBox"
     countryBoxEl.appendChild(countriesDetailContainerEl)
 
 
@@ -53,7 +49,6 @@ export function creatingCountryBox(flag, countryName, population, region, capita
     let countryNameEl = document.createElement("h1")
     countryNameEl.innerHTML = countryName
     countryNameEl.classList.add("country-name")
-    countryNameEl.id = countryName + "Name"
     countriesDetailContainerEl.appendChild(countryNameEl)
 
 
@@ -64,13 +59,11 @@ export function creatingCountryBox(flag, countryName, population, region, capita
     let populationEl = document.createElement("h1")
     populationEl.innerHTML = "Population: "
     populationEl.classList.add("key")
-    populationEl.id = countryName + "Population"
     countriesDetailContainerEl.appendChild(populationEl)
 
     let populationSpan = document.createElement("span")
     populationSpan.textContent = population
     populationSpan.classList.add("detail")
-    populationSpan.id = countryName + "PopulationNumber"
     populationEl.appendChild(populationSpan)
 
 
@@ -81,7 +74,6 @@ export function creatingCountryBox(flag, countryName, population, region, capita
     let regionEl = document.createElement("h1")
     regionEl.innerHTML = "Region: "
     regionEl.classList.add("key")
-    regionEl.id = countryName + "Region"
     countriesDetailContainerEl.appendChild(regionEl)
 
     let regionSpan = document.createElement("span")
@@ -100,7 +92,6 @@ export function creatingCountryBox(flag, countryName, population, region, capita
     let capitalEl = document.createElement("h1")
     capitalEl.innerHTML = "Capital: "
     capitalEl.classList.add("key")
-    capitalEl.id = countryName + "Capital"
     countriesDetailContainerEl.appendChild (capitalEl)
 
     let capitalSpan = document.createElement("span")
@@ -185,7 +176,7 @@ homePageDarkModeButtonEl.onclick = () => {
     countriesContainerEl.innerHTML = ""
     runningFetch()
     themeChanger()
-    if(localStorage.getItem("darkMode") === "true"){
+    if(localStorage.getItem("darkMode") === "false"){
         buttonTextEl.textContent = "Dark Mode"
     }
     else{

@@ -37,7 +37,7 @@ body{
     padding-left: 15px;
     padding-right: 15px;
     overflow: auto;
-    box-shadow: 0px 0px 5px 0px black;
+    box-shadow: 0px 0px 5px 0px rgb(39, 38, 38);
 }
 
 .navbar-title{
@@ -74,7 +74,7 @@ body{
     max-width: 400px;
     height: 50px;
     border-radius: 7px;
-    box-shadow: 0px 0px 5px black;
+    box-shadow: 0px 0px 5px rgb(46, 46, 46);
 }
 
 .search-icon{
@@ -147,7 +147,7 @@ body{
     max-width: 400px;
     margin-top: 40px;
     border-radius: 7px;
-    box-shadow: 0px 0px 5px 0px black;
+    box-shadow: 0px 0px 5px 0px rgb(47, 47, 47);
 }
 
 .center-element{
@@ -216,7 +216,7 @@ body{
     font-size: 15px;
     height: 30px;
     border-radius: 4px;
-    box-shadow: 0px 0px 5px black;
+    box-shadow: 0px 0px 5px rgb(48, 47, 47);
 }
 
 .arrow-icon{
@@ -297,7 +297,7 @@ body{
     font-weight: 700;
     min-width: 70px;
     height: 30px;
-    box-shadow: 0px 0px 5px 0px black;
+    box-shadow: 0px 0px 5px 0px rgb(50, 50, 50);
 }
 
 

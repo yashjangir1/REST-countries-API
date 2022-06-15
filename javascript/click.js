@@ -19,12 +19,27 @@ export function appendingData(countryName){
             let data = dataArray[0]
 
             let nativeNameValues = Object.values(data.name.nativeName)
-
-            let currencyArr = Object.values(data.currencies)
+            
+            let currencyArr
+            if(data.currencies === undefined){
+                currencyArr = ["-"]
+            }
+            else{ 
+                currencyArr = Object.values(data.currencies)
+            }
 
             let languagesArr = Object.values(data.languages)
 
-            creatingAboutPage(data.name.common, nativeNameValues, data.population.toLocaleString(), data.region, data.subregion, data.capital[0], data.tld[0], currencyArr, languagesArr, data.flags.png)
+            let capitalArr
+
+            if(data.capital === undefined){
+                capitalArr = ["-"]
+            }
+            else{
+                capitalArr = data.capital
+            }
+
+            creatingAboutPage(data.name.common, nativeNameValues, data.population.toLocaleString(), data.region, data.subregion, capitalArr, data.tld[0], currencyArr, languagesArr, data.flags.png)
             if(data.borders !== undefined){
                 creatingBorderCountriesButton(data.borders)
             }

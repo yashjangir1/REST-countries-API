@@ -17,7 +17,7 @@
 
     <div class="main-container navbar-about-page">
         <div class="navbar dark-mode-navbar" id = "homePageNavbar">
-            <h1 class="navbar-title" id = "hPnavbarHeading"><a href = "./index.html"><i class="fa-solid fa-earth-oceania"></i></a></h1>
+            <div class="navbar-title" id = "hPnavbarHeading"><a href = "./index.html"><i class="fa-solid fa-earth-oceania"></i></a></div>
             <button class = "btn dark-mode-button" id = "homePageDarkModeButton">
                 <i class="fa-solid fa-moon moon-icon" id = "moonIcon"></i>
                 <span class="button-name" id = "buttonText"></span>
@@ -45,6 +45,7 @@
                     <option value="Europe">Europe</option>
                     <option value="America">America</option>
                     <option value="Oceania">Oceania</option>
+                    <option value="Antarctic">Antarctic</option>
                 </select>
             </div>
         </div> 
@@ -52,12 +53,12 @@
 
          <!-- ######### div for appending countries ########### -->
 
-        <div class="countries-container" id = "countriesContainer">
+        <main class="countries-container" id = "countriesContainer">
             <button id = "spinner" class="d-none btn spinner-button d-flex flex-row justify-content-center" type="button" disabled>
                 <span class="spinner-border spinner-border-sm spinner-icon" role="status" aria-hidden="true"></span>
                 <p class="loading-text">Loading...</p>
             </button>
-        </div>
+        </main>
 
 
     </div>
