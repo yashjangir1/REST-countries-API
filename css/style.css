@@ -379,7 +379,6 @@ body{
 
     .map-container{
         height: 70vh;
-        align-self: center;
     }
 
     .details-container{
@@ -389,6 +388,10 @@ body{
 
     .country-name-A{
         font-size: 45px;
+    }
+
+    .border-countries-buttons{
+        max-width: 40vw;
     }
 
 }
