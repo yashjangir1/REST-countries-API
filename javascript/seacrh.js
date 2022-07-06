@@ -10,7 +10,7 @@ errorMessageEl.textContent = ""
 
 const url = "https://restcountries.com/v3.1/name/"
 
-searchBarEl.addEventListener("keyup", function(event){
+searchBarEl.addEventListener("keydown", function(event){
     spinnerEl.classList.remove("d-none")
     countriesContainerEl.innerHTML = ""
     if(event.target.value === ""){
