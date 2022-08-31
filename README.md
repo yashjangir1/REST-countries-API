@@ -1,7 +1,7 @@
 # REST-countries-API
 REST Countries API with color theme switcher
 
-This project uses REST countries API and gives us the data about the countries.
+This project uses RESTful countries API (http://restcountries.eu)[http://restcountries.eu] and gives us the data about the countries.
 This project is created using HTML, CSS and Javascript only and library bootstrap.
 
 It also uses Leaflet API for which takes latlng from rest countries API and gives shows the country on map.
